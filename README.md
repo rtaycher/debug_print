@@ -4,8 +4,8 @@ debug_print
 
 In beta, still need to figure out what to do with logging.
 
-ex:
-
+ex(using `import debug_print as d`):
+    
     d.debug_eval_print("a")
 
 or
