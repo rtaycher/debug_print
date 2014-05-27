@@ -1,5 +1,4 @@
-from setuptools import setup 
-import sys
+from setuptools import setup
 import os
 import os.path
 
@@ -8,9 +7,9 @@ __version___ = open(os.path.join(os.path.dirname(__file__),
 
 long_description = open(os.path.join(os.path.dirname(__file__), "README.md")).read()
 
-setup(name='printf_debugging',
+setup(name='debug_print',
       version=__version___,
-      description="A number of tools to simpify debugging, mainly printf style debugging.",
+      description="A mini library for printf style debugging.",
       long_description=long_description,
       keywords='debug printf-debugging',
       author='Roman A. Taycher',
