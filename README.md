@@ -1,4 +1,6 @@
-# DRY(Don't Repeat Yourself) printf style debugging
+===========
+debug_print
+===========
 
 In beta, still need to figure out what to do with logging.
 
@@ -6,8 +8,8 @@ ex:
 
     d.debug_eval_print("a")
 
-or    
-    
+or
+
     d.debug_eval_print("[l(s) for s in lst]")
 
 prints result/value of the expression/variable(using eval, the reason
@@ -26,3 +28,4 @@ a different colorscheme.
 ex.
 
     d.debug_eval_print("p[0]", colorscheme=d.ColorSchemes.FORE_RED)
+
