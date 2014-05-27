@@ -1,5 +1,5 @@
-# !/usr/bin/env python
-# printf style debugging
+#!/usr/bin/env python
+#printf style debugging
 
 from __future__ import print_function
 #import logging

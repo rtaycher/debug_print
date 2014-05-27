@@ -1,2 +1,2 @@
-from debug_print import *
+from debug_print_impl import *
 

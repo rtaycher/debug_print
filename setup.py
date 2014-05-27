@@ -1,9 +1,13 @@
+#!/usr/bin/env python
+
 from setuptools import setup
 import os
 import os.path
 
+
 __version___ = open(os.path.join(os.path.dirname(__file__),
                                       "debug_print/VERSION")).read().strip()
+
 
 long_description = open(os.path.join(os.path.dirname(__file__), "README.md")).read()
 
@@ -17,5 +21,5 @@ setup(name='debug_print',
       url='http://crouchofthewildtiger.com/',
       license='MIT/X11 License',
       include_package_data=True,
-      zip_safe=True,
+      zip_safe=False,
       )
