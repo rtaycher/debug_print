@@ -14,22 +14,17 @@ d.debug_eval_print("a")
 
 prints
 
-<font color="blue">File: ./example.py</span> | <font color="darkblue">Line:4</span> | <font color="blue">Func:`main`</span>
-
-<font color="blue">Expr: a</span> | <font color="darkblue">type:`<type 'list'>`</span> |  <font color="blue">result:[1, 2, 3, 4, 5]</span>
-
+![ex1](debug_print_example1.png)
 
 or
 
-```
+```python
 d.debug_eval_print("[x+1 for x in range(len(a))]")
 ```
 
 which prints
 
-<font color="blue">File: ./example.py</span> | <font color="darkblue">Line:5</span> | <font color="blue">Func:`main`</span>
-
-<font color="blue">Expr: [x+1 for x in range(len(a))]</span> | <font color="darkblue">type:`<type 'list'>`</span> |  <font color="blue">result:[1, 2, 3, 4, 5]</span>
+![ex2](debug_print_example2.png)
 
 prints result/value of the expression/variable(using eval, the reason
 to use eval is so you can print out the variable name/expresion
@@ -39,9 +34,8 @@ Soon it will print in color to stand out better.
 ```python
 d.debug_message("some message")
 ```
-<font color="blue">File: ./example.py</span> | <font color="darkblue">Line:8</span> | <font color="blue">Func:main</span>
 
-<font color="darkblue">some message</span>
+![ex3](debug_print_example3.png)
 
 just prints out a string(no eval) but with func name/line #/file
 
@@ -52,9 +46,9 @@ a different colorscheme.
 ex.
 
 ```python
-d.debug_eval_print("a[0]", colorscheme=d.ColorSchemes.FORE_RED)
+  d.debug_eval_print("a[0]", colorscheme=d.ColorSchemes.FORE_RED)
 ```
 
-<font color="red">File: ./example.py</span> | <font color="darkred">Line:5</span> | <font color="red">Func:`main`</span>
+prints
 
-<font color="red">Expr: a[0]</span> | <font color="darkred">type:`<type 'int'>`</span> |  <font color="red">1</span>
+![ex4](debug_print_example4.png)
